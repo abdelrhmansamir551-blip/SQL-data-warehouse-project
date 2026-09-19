@@ -1,1 +1,15 @@
 
+
+
+
+use master;
+
+Create database Datawarehouse;
+
+use Datawarehouse;
+
+create schema Bronze;
+go
+create schema Siver;
+go
+create schema Gold;
