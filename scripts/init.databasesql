@@ -1,6 +1,18 @@
+ 
+/*Create daatbase and schema 
+Script Purpose:
+This script creates a new database named 'datawarehouse' afer checking if it already exists 
+if the database exists , it is dropped and recreated , additionally , the script set up the three schemas 
+within the database ' Bronze, Sliver, and gold 
 
+--Warning 
+Running this script creates a new database named 'datawarehouse' after checking if it already exists 
+If the database Exists ,All data will be permantly deleted . processed with cuation 
+and ensure you propper packups before running this csriptr 
 
-
+--Drop and recreate  the ' Data warehouse' database 
+If exists (select 1 from sys.database where name ='datawarehouse')*/
+==============================================
 
 use master;
 
