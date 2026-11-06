@@ -1,4 +1,19 @@
-		
+/*
+---------------------------------------------------
+stored procesdure : load eilver layer (Bronze>silver )
+===========================================================
+script purpose 
+This stored procesdure performs the etl (extract, transform,load)to populate the silvr scheme tables from the bronze scheme
+action performed 
+truncate silver tables
+inserts transformed,and claensed data from bronze into silver tables 
+parameters
+none,
+this stord procedure does not accept any parameters or return any values 
+usage examble:
+EXEC Silver.Load_silver;
+-------------------------------------
+
 
 			create or alter procedure bronze.load_bronze as 
 			begin  
