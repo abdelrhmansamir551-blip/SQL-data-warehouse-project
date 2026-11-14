@@ -1,6 +1,13 @@
 the follwoing codes for the error dixcoved before the clasing 
 
-
+--check for invalid dates 
+select nullif (sls_order_dt,0) sls_order_date
+from bronze.crm_sales_details
+where sls_order_dt<=0
+or LEN(sls_order_dt)!=8
+or sls_order_dt>20500101
+or sls_order_dt<19000101
+----------------------------------
 --check nulls or duplicates in primary key 
 --expectation "no results 
 
